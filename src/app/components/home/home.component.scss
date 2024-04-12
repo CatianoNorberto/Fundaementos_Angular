@@ -13,17 +13,20 @@ main {
   flex-direction: column;
 
   font-family: "Reboto", sans-serif;
+  .heading {
+    flex: 1;
 
-  span {
-    font-size: 20px;
-    font-weight: 700;
-    color: $secondary-text;
-  }
+    span {
+      font-size: 20px;
+      font-weight: 700;
+      color: $secondary-text;
+    }
 
-  h1 {
-    font-size: 72px;
-    font-weight: 900;
-    color: $primary-text;
+    h1 {
+      font-size: 72px;
+      font-weight: 900;
+      color: $primary-text;
+    }
   }
 }
 
@@ -66,9 +69,14 @@ main {
   justify-content: center;
 }
 
+.form-container{
+  background: $secondary-color;
+}
+
 @media (min-width: 1080px) {
   .main-section {
     flex-direction: row;
+    gap: 80px;
   }
 
   .benefit-section {
