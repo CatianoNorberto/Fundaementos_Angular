@@ -1,3 +1,0 @@
-interface NewslatterMessage {
-  message: string;
-}
