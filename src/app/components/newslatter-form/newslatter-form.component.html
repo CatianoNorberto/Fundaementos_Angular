@@ -12,11 +12,17 @@
       eget temp
     </p>
   </div>
-  <form action="">
-    <label for="">Nome</label>
-    <input type="text"/>
+  <form [formGroup]="newsletterForm">
+    <label for="name">Nome</label>
+    <input id="name" type="text" formControlName="name"/>
     <label for="">Email</label>
-    <input type="text"/>
-    <btn-primary btn-text="Inscriva-se" variant="secondary"></btn-primary>
+    <input id="email" type="text" formControlName="email"/>
+    <btn-primary
+      btn-text="Inscriva-se"
+      variant="secondary"
+      (submit)="onSubmit()"
+      [disabled]="!newsletterForm.valid"
+      >
+    </btn-primary>
   </form>
 </section>
